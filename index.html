@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Notícias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>COFFEE SHOP</h1>
+            <section class="lado">
+            <a href="#sobre"><h3 type="button" class="sobreloja">Sobre a loja</h3></a>
+            <a href="#produtoscafe"><h3 type="button" class="produtos">Produtos</h3></a>
+        </section>
+    </header>
+    <div class="container conteudo">
+        <main>
+            <section class="destaque">
+                <article class="noticia">
+                    <a href="#" class="textocafe">
+                        <img src="https://images.pexels.com/photos/2067638/pexels-photo-2067638.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="cafe">
+                        <h2 class="flex-container" id="sobre">Sobre a loja</h2>
+                        <p><h4 class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum officia unde, maiores error iure dignissimos. Maiores quibusdam at laborum? Fuga perferendis quasi fugit, blanditiis dolores officia delectus dolorum est soluta Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h4></p>
+                    </a>
+            </section>
+            <section>
+                <h2 id="produtoscafe">Produtos</h2>
+                <div class="noticias">
+                    <article class="noticia">
+                        <a href="#" class="itens">
+                            <img class="capuccino" src="https://images.pexels.com/photos/10406759/pexels-photo-10406759.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                            <h3>Cappuccino</h3>
+                            <h3 type="button" class="botao">Adicionar ao carrinho</h3>
+                        </a>
+                    </article><article class="noticia">
+                        <a href="#" class="itens">
+                            <img class="expresso" src="https://images.pexels.com/photos/4226806/pexels-photo-4226806.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                            <h3>Expresso</h3>
+                            <h3 type="button" class="botao">Adicionar ao carrinho</h3>
+                        </a>
+                    </article><article class="noticia">
+                        <a href="#" class="itens">
+                            <img class="expresso" src="https://images.pexels.com/photos/4869332/pexels-photo-4869332.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                            <h3>Café Gelado</h3>
+                            <h3 type="button" class="botao">Adicionar ao carrinho</h3>
+                        </a>
+                    </article><article class="noticia">
+                        <a href="#" class="itens">
+                            <img class="expresso" src="https://images.pexels.com/photos/616840/pexels-photo-616840.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                            <h3>Chá gelado</h3>
+                            <h3 type="button" class="botao">Adicionar ao carrinho</h3>
+                        </a>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('.botao-menu button').click(function() {
+                $('.menu').slideToggle();
+            })
+        })
+    </script>
+</body>
+</html>
